@@ -1,0 +1,314 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+/* left side form styling is there */
+.leftside{
+    background:#fff7df ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftside #upper-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+}
+
+.leftside .form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* input text fields styling*/
+
+input{
+    padding: 15px 25px;
+    border-radius: 35px;
+    width: 370px;
+    margin-bottom: .7rem;
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid #F76300;
+}
+
+
+p{
+    font-size: 15px;
+}
+
+.form-div .inner-link{
+   margin-left: 15em;
+   padding-bottom: 20px;
+   font-size: 12px;
+}
+
+.form-div .inner-link a{
+    color: #F76300;
+}
+/* Rightside container css styling */
+
+.rightside{
+    background: #F76300;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image styling */
+.leftside #web-logo{
+    padding-bottom: 20px;
+}
+
+/* Button styling*/
+
+#button-sigin{
+   background-color:   #F76300;
+   color: white;
+   margin:10px 15px ;
+   box-shadow: 0 10px 30px 0px rgba(0,0,0,0.3);
+}
+
+#button-sigin:hover{
+    background-color:#32566c ;
+    transition: 0.3s ease-in-out;
+}
+
+/* 
+#circle-1{
+    width: 100px;
+    background-color: black;
+    z-index: 1;
+} */
+
+/* Right aarrow icon sttling */
+
+#right-icon{
+    position: absolute;
+    top: 309px;
+    left: 230px;  
+    color: #fff7df;  
+}
+
+/* Eye icon sttling */
+
+#eye-icon{
+    position: absolute;
+    top: 196px;
+    left: 350px;
+    color: #7a797e;
+}
+
+/* media queirs for Max-768 width screen */
+
+@media all and (max-width : 768px) {
+    .rightside{
+        width: 100%;
+    }
+
+    .rightside img{
+        height: 350px;
+    }
+
+    .leftside .form-div img{
+        height: 60px;
+        margin-bottom: 1rem;
+
+    }
+
+    .leftside input{
+        padding: 15px 25px;
+        border-radius: 35px;
+        width: 320px;
+        margin-bottom: .7rem;
+        border: none;
+        outline: none;
+    }
+
+    .form-div .inner-link{
+        margin-left: 11em;
+        padding-bottom: 20px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .leftside #upper-img{
+        height: 100px;
+    }
+
+    #right-icon{
+        position: absolute;
+        top: 320px;
+        left: 205px;    
+    }
+
+    #eye-icon{
+        position: absolute;
+        top: 200px;
+        left: 305px;
+    }
+    
+}
+
+/* media queirs for Max-576 width screen */
+
+@media all and (max-width : 576px){
+    .rightside{
+        width: 100%;
+    }
+
+    .rightside img{
+        height: 260px;
+    }
+
+    .leftside .form-div img{
+        height: 50px;
+        margin-bottom: 1rem;
+
+    }
+
+    .leftside input{
+        padding: 15px 25px;
+        border-radius: 35px;
+        width: 250px;
+        margin-bottom: .7rem;
+        border: none;
+        outline: none;
+    }
+
+    .form-div .inner-link{
+        margin-left: 9em;
+        padding-bottom: 10px;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    .leftside #upper-img{
+        height: 80px;
+    }
+
+    #right-icon{
+        position: absolute;
+        top: 293px;
+        left: 170px;    
+    }
+
+    #eye-icon{
+        position: absolute;
+        top: 190px;
+        left: 240px;
+    }
+    
+}
+
+/* media query for max-width 400px*/
+
+@media all and (max-width : 420px)  {
+    .rightside{
+        display: none;
+    }
+
+    .leftside{
+        width: 200%;
+    }
+    .leftside .form-div img{
+        height: 50px;
+        margin-bottom: 1rem;
+
+    }
+
+    .leftside input{
+        padding: 15px 25px;
+        border-radius: 35px;
+        width: 300px;
+        margin-bottom: .7rem;
+        border: none;
+        outline: none;
+    }
+
+    .form-div .inner-link{
+        margin-left: 13em;
+        padding-bottom: 10px;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    .leftside #upper-img{
+        height: 100px;
+    }
+
+    #right-icon{
+        position: absolute;
+        top: 293px;
+        left: 194px;    
+    }
+
+    #eye-icon{
+        position: absolute;
+        top: 190px;
+        left: 290px;
+    }
+    
+}
+
+/* media queries for max 280px width */
+
+@media all and (max-width : 280px){
+    .leftside{
+        width: 200%;
+    } 
+    
+    .leftside .form-div img{
+        height: 50px;
+        margin-bottom: 1rem;
+
+    }
+
+
+    .leftside input{
+        padding: 15px 25px;
+        border-radius: 35px;
+        width: 250px;
+        margin-bottom: .7rem;
+        border: none;
+        outline: none;
+    }
+
+    .form-div .inner-link{
+        margin-left: 9em;
+        padding-bottom: 10px;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    .leftside #upper-img{
+            height: 80px;
+    }
+
+    #right-icon{
+        position: absolute;
+        top: 293px;
+        left: 168px;    
+    }
+
+    #eye-icon{
+        position: absolute;
+        top: 190px;
+        left: 240px;
+    }
+}

@@ -1,0 +1,248 @@
+/* styling of whole container */
+
+.Conatiner-fluid{
+    background-color: #212121;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+
+}
+.Conatiner-fluid img{
+    height: 35px;
+    margin-left: 1.4em;
+
+}
+
+.Conatiner-fluid p{
+    font-size: 12px;
+    color: white;
+    margin-left: 2.3em;
+    
+}
+
+/* styling of whole container ends here */
+
+.scnd-div h5{
+    margin-left: 1.4em;
+    
+}
+.scnd-div li{
+    list-style-type: none;
+    font-size: 13px;
+    padding-bottom: .5em;
+    margin-top: 1em;
+    }
+  
+
+h5{
+    color: white;
+}
+
+.scnd-div li .footer-nav{
+    text-decoration: none;
+    color: white;
+
+}
+
+ .scnd-div li .footer-nav:hover{
+    border-bottom: 2px solid white;
+} 
+
+.extra-nav li{
+    list-style-type: none;
+    margin-top: 2em;
+    
+}
+
+.extra-nav li #extra-men{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+   
+}
+
+.extra-nav li #extra-men:hover{
+    border-bottom: 2px solid white;
+}
+
+#reserved-col{
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#reserved-col:hover{
+    color: #FFC000 !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#fb-logo , #insta-logo{
+    transition: all .5s linear;
+    
+}
+
+#fb-logo:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    transition: 0.3s ease;
+}
+
+#insta-logo:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    transition: 0.3s ease;
+}
+
+
+#lower-footer-sec h2:hover{
+    color: #FFC000 !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+#lower-footer-sec h4:hover{
+    color: #FFC000 !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+#lower-footer-sec #loct-logo ,#call-logo ,#mail-logo{
+    height:3em;
+    
+}
+
+/* Media queries section there */
+
+@media all and (max-width: 992px) {
+    #lower-footer-sec #mail-logo{
+            height: 4em;
+    }
+}
+
+
+/* media queires for 768px device */
+
+@media all and (max-width: 768px) {
+    .Conatiner-fluid img{
+        height: 26px;
+    }
+
+    #lower-footer-sec #loct-logo {
+        height: 4em;
+    }
+
+    #lower-footer-sec #call-logo {
+        height: 3em;
+    }
+
+    #lower-footer-sec #mail-logo {
+        height: 2em;
+    }
+
+    #lower-footer-sec #mail-heading{
+        font-size: 1em;
+}
+    #lower-footer-sec #phone-heading{
+        font-size: 1em;
+    }
+
+
+    #lower-footer-sec h2,h4{
+        font-size: 15px;
+    }
+}
+
+
+/* media queries for 576px */
+
+@media all and (max-width: 576px) {
+    .Conatiner-fluid img{
+        height: 20px;
+    }
+
+
+    #lower-footer-sec #loct-logo{
+        height: 3em;
+        margin-bottom: 2em;
+        
+        
+    }
+
+    #lower-footer-sec #mail-logo{
+        height: 2em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+    #lower-footer-sec #call-logo{
+        height: 2em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+
+    #lower-footer-sec h2,h4{
+        font-size: 12px;
+    }
+}
+
+
+
+/* media queries for 400px width */
+
+@media all and (max-width:400px) {
+    
+    #lower-footer-sec #mail-logo{
+        margin-left: 2em;
+        margin-top: 1.3em;
+        height: 2em;
+    }
+
+    #lower-footer-sec #call-logo{
+        margin-left: 2em;
+        margin-top: 1.3em;
+        height: 2em;
+    }
+
+    #lower-footer-sec #phone-heading{
+        margin-left: 1em;
+    }
+
+
+    #lower-footer-sec #loct-logo{
+        margin-left: 2.5em;
+        margin-top: 1.3em;
+        height: 2.5em;
+        
+    }
+
+    #lower-footer-sec #isl-head{
+        font-size: 2em;
+    }
+
+
+    #first-div p{
+        width: 200px;
+    }
+    
+
+    #lower-footer-sec #call-logo{
+        margin-top: 1em;
+        
+    }
+
+    #lower-footer-sec #call-logo h5{
+        font-size: 2em;
+    }
+    
+} 
+

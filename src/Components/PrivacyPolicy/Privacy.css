@@ -1,0 +1,25 @@
+.leftside{
+    background:#fff7df ;
+    height: 120vh;
+    width: 100%;
+    
+}
+
+.page-heading h1{
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ol{
+    margin-left: 3em;
+}
+
+
+ol li{
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding-bottom: 1em;
+    
+}

@@ -1,0 +1,165 @@
+.get_in_touch{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: #fff7df;
+ 
+}
+  
+  .get_in_touch .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    font-family: 'Inter',sans-serif;
+    
+    
+  }
+
+  
+  /* img styling is below */
+  
+  
+  .contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+    font-family: sans-serif;
+    
+  }
+  
+  .contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #fb9400;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #fff7df;
+  } 
+  
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text:valid + .label{
+    transform: translateY(-24px);
+  
+  }
+  
+  .contact-form .input-text:focus {
+    outline: none;
+  
+  }
+  
+  .contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color:   black; /*#5543ca*/;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.4s ease-in-out;
+  
+  }
+  
+
+  /* button sttyling is below */
+  .btn {
+    border: none;
+    padding: 15px 100px !important;
+    margin-left: 10em;
+    
+  }
+  
+  .btn.btn-outline-white {
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  
+  
+  .btn.btn-primary {
+    background: #2d71a1;
+    background:  #fa8d00;/* linear-gradient(-45deg, #1391a5, #274685);*/
+    color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  }
+  .btn.btn-primary:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* Button styling ends there */
+
+  
+
+.rightside #plumber{
+    display: flex;
+    height: 500px;
+    margin-left: 4em;
+    margin-top: 4em;
+}
+
+
+@media all and (max-width:768px) {
+    
+        .rightside #plumber{
+            height: 300px;
+        
+        }
+
+        .btn {
+            margin-left: 3em;
+            
+          }
+
+          
+        .get_in_touch .title{
+        font-size:29px;
+        }
+
+}
+
+  @media all and (max-width:750px) {
+      .rightside #plumber{
+          display: none;
+
+      }
+
+      .btn {
+        margin-left: 15em;
+        
+      }
+
+
+  }
+
+  @media all and (max-width:576px) {
+    
+    .btn {
+      margin-left: 8em;
+      
+    }
+
+
+}
+
+@media all and (max-width:380px) {
+    
+    .btn {
+      margin-left: 2em;
+      
+    }
+
+    .get_in_touch .title{
+        font-size:30px;
+    }
+
+
+}
+  

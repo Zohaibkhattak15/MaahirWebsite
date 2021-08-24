@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+/* left side form styling is there */
+.leftside{
+    background:#fff7df ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftside .form-div #web-logo{
+    padding-bottom: 10px;
+    height: 70px;
+}
+
+.leftside .form-div #logo-below-text{
+    width: 350px;
+    height: 34px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5C5C5C;
+    margin-top: 15px;
+}
+
+
+.leftside #upper-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130px;
+}
+
+.leftside .form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.leftside .form-div .verfication-boxes{
+    display: flex;
+
+}
+
+.leftside .form-div .verfication-boxes input{
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 20px; 
+    outline: none; 
+    background-color:#fff7df ;
+    text-align: center;  
+}
+
+.leftside .form-div a{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+.leftside .form-div .button-procede {
+    background-color: #32566C;
+    color: ivory;
+    padding: 15px 25px;
+    border-radius: 100px;
+    width: 370px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
+.leftside .form-div .button-procede:hover{
+    background-color: #F76300;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* Rightside container css styling */
+
+.rightside{
+    background: #F76300;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightside img {
+    height: 520px;
+}
+    .leftside .circle1{
+    position: absolute;
+    left: -0.86%;
+    right: 97.67%;
+    top: 83%;
+    bottom: 12.22%;
+    border: 2px solid green;
+    background: #E86202;
+    mix-blend-mode: normal;
+    opacity: 0.57;
+    z-index: -1;
+    }
+
+
+
+
+
+
+
+
+
+
+ /* media queirs for Max-768 width screen */
+
+@media all and (max-width : 768px){
+
+        .rightside{
+            width: 100%;
+        }
+
+        .leftside{
+            width: 100%;
+        }
+
+        .rightside img {
+            height: 360px;
+        }
+
+        .leftside .form-div #web-logo{
+            height: 55px;
+        }
+                
+        input{
+            width: 350px;
+          }
+
+}
+
+
+/* media queirs for Max-576 width screen */
+
+@media all and (max-width : 576px){
+    
+    
+    .rightside{
+        width: 100%;
+    }
+
+    .rightside img {
+        height: 280px;
+    }
+
+    .leftside{
+        width: 100%;
+    }
+            
+    .leftside .form-div #web-logo{
+        height: 55px;
+    }
+
+    .leftside .form-div #logo-below-text{
+        font-size: 13px;
+    } 
+
+    .leftside .form-div .button-procede{
+        width: 260px;
+      }
+
+      
+    .leftside #upper-img{
+        height: 100px;
+    }
+
+    .leftside .form-div .verfication-boxes{
+        width: 280px;
+    }
+}
+
+
+/* media queries for max 420px width */
+
+@media all and (max-width : 420px){
+    .rightside{
+        display: none;
+    }
+
+    .leftside{
+        width: 200%;
+    }
+            
+    .leftside .form-div #web-logo{
+        height: 60px;
+    }
+
+    .leftside .form-div #logo-below-text{
+        font-size: 14px;
+    } 
+
+    input{
+        width: 350px;
+      }
+    
+}
+
+
+
+/* media queries for max 280px width */
+
+@media all and (max-width : 280px){
+   
+    .leftside{
+        width:300%;
+        height: 300%;
+        
+    }
+
+    input{
+        width: 240px;
+    }
+
+           
+    .leftside .form-div #web-logo{
+        height: 45px;
+    }
+
+    .leftside .form-div #logo-below-text{
+        font-size: 10px;
+    } 
+
+        
+    .leftside #upper-img{
+        height: 90px;
+    }
+}
