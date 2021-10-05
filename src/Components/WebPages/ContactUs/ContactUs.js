@@ -4,7 +4,7 @@ import HeaderHeading from '../../Header/HeaderHeading';
 import './ContactUs.css';
 import plumb from '../../../assets/plumb.png';
 import tl from '../../../assets/tl.png';
-import tld from '../../../assets/tld.png';
+// import tld from '../../../assets/tld.png';
 import { Col , Container, Image, Row } from 'react-bootstrap';
 
 
@@ -74,9 +74,7 @@ const ContactUs = () => {
                 </Container>
               </section>
 
-                    <Col className="rightside" style={{backgroundColor:"#fff7df"}}> 
-                            <Image src={tld} className="plumber"  alt="Pic of worker" />
-                    </Col>
+                  
 
     <Footer />
     </>
