@@ -63,55 +63,20 @@ const SubCat = () => {
                         slidesToShow={6}
                         scrollOnDevice={true}
                     >
-                    
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>  
-                                    <h3>Plumber</h3>
+                        {   
+                    services.map(service => 
+                    {
+                        return(
+                                <Col> 
+                                    <Image src={cirlpic} alt="Circle pic"/>
+                                    <Image className="circle-div" src={service.img} alt='circle ' />
+                                    <h4>{service.title}</h4>
+                                    <p>{service.description}</p>
                                 </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>  
-                                    <h3>Plumber</h3>
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/> 
-                                    <h3>Plumber</h3> 
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>
-                                    <h3>Plumber</h3>  
-                                </Col>
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>  
-                                    <h3>Plumber</h3>
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>  
-                                    <h3>Plumber</h3>
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/> 
-                                    <h3>Plumber</h3> 
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/>  
-                                    <h3>Plumber</h3>
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/> 
-                                    <h3>Plumber</h3> 
-                                </Col>
-
-                                <Col className='my-5 mx-5'> 
-                                    <img src={cirlpic} alt="Circle pic"/> 
-                                    <h3>Plumber</h3> 
-                                </Col>
+                        )
+                    })
+                }
+                                
                         
                         
                     </InfiniteCarousel>
