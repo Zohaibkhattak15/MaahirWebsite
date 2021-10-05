@@ -1,0 +1,28 @@
+.whole-div {
+  background: #fff7df;
+  width: 100%;
+  text-align: center;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.whole-div img {
+  /* transform: matrix(-1.4, 0, 0, 1.4, 0, 0); */
+  margin-left: -60px;
+}
+
+.whole-div img:hover {
+  cursor: pointer;
+}
+
+.whole-div h4 {
+  padding-top: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.whole-div p {
+  font-size: 14px;
+}

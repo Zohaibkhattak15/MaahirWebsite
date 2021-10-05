@@ -1,0 +1,140 @@
+.main-div {
+  position: relative;
+  height: 450px;
+  background: linear-gradient(252.78deg, #ffc000 0%, #f76300 100.7%);
+  margin-top: -5px;
+}
+
+.main-div .row h1 {
+  color: white;
+  position: absolute;
+  top: 110px;
+  left: 60px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 158.34%;
+}
+
+.main-div .row p {
+  color: white;
+  position: absolute;
+  top: 215px;
+  left: 60px;
+  font-size: 13px;
+}
+
+.main-div .row .inner-section #app-store-sec {
+  position: absolute;
+  left: 57px;
+  top: 210px;
+}
+
+.main-div .row .inner-section #google-store-sec {
+  position: absolute;
+  left: 230px;
+  top: 240px;
+}
+
+@media all and (max-width: 992px) {
+  .main-div .row h1 {
+    left: 70px;
+  }
+
+  .main-div .row p {
+    left: 70px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main-div .row h1 {
+    left: 50px;
+    font-size: 25px;
+  }
+
+  .main-div .row p {
+    left: 50px;
+    top: 220px;
+  }
+
+  .main-div .row .inner-section #app-store-sec {
+    left: 50px;
+    top: 230px;
+  }
+
+  .main-div .row .inner-section #app-store-sec img {
+    height: 120px;
+  }
+
+  .main-div .row .inner-section #google-store-sec {
+    left: 170px;
+    top: 249px;
+  }
+
+  .main-div .row .inner-section #google-store-sec img {
+    height: 80px;
+  }
+}
+
+@media all and (max-width: 381px) {
+  .main-div {
+    width: 100%;
+  }
+
+  .main-div .row h1 {
+    left: 20px;
+    font-size: 19px;
+  }
+
+  .main-div .row p {
+    font-size: 10px;
+    top: 190px;
+    left: 20px;
+  }
+
+  .main-div .row .inner-section #app-store-sec {
+    left: 20px;
+    top: 185px;
+  }
+
+  .main-div .row .inner-section #google-store-sec {
+    left: 140px;
+    top: 205px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .main-div {
+    width: 100%;
+  }
+
+  .main-div .row h1 {
+    left: 20px;
+    font-size: 14px;
+  }
+
+  .main-div .row p {
+    font-size: 7px;
+    top: 170px;
+    left: 20px;
+  }
+
+  .main-div .row .inner-section #app-store-sec {
+    left: 20px;
+    top: 165px;
+  }
+
+  .main-div .row .inner-section #app-store-sec img {
+    height: 90px;
+  }
+
+  .main-div .row .inner-section #google-store-sec {
+    left: 110px;
+    top: 179px;
+  }
+
+  .main-div .row .inner-section #google-store-sec img {
+    height: 62px;
+  }
+}

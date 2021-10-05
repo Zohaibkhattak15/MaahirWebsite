@@ -1,0 +1,157 @@
+.sticky {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+/*sttyling of the website whole navbar */
+.navbar {
+  height: 80px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.2em;
+  padding-top: 1em;
+}
+/* styling of the website logo */
+
+.navbar img {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  height: 37px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* styling of nav-menu class */
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 13px;
+}
+
+.nav-active {
+  border-bottom: 2px solid #32566c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #32566c;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-menu .nav-links {
+  text-decoration: none !important;
+  color: #f76300;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Sign in buttons styling*/
+#singin-btn {
+  background: #32566c;
+  border-radius: 70px;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  font-size: 10px;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+}
+
+#sigin-btn:hover {
+  transition: 0.2s ease-in-out;
+}
+
+/* adding media query for toggle bar menue */
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100vw;
+    display: table;
+    margin-right: 3em;
+  }
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar img {
+    left: 20px;
+    top: 5px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .navbar img {
+    left: 15px;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .navbar img {
+    top: 20px;
+    left: 1px;
+    height: 20px;
+  }
+}

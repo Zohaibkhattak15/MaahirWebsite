@@ -1,66 +1,48 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect} from 'react';
 import './SignUp3.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Container , Row , Image, Col } from 'react-bootstrap';
 
+const SignUp3 = () => {
 
-
-function SignUp3() {
-
-    
     /* This state is basically initilizing the animation on scroll */
-    
     useEffect(() => {
        Aos.init({duration : 2000})
     }, []);
 
     return (
-        <>
-
-           
-            <div className="container-fluid g-0">
-                <div className="row g-0">
-                
+        <>           
+            <Container fluid className="g-0">
+                <Row className="g-0">
                     {/* div container for left side  */}
-                    <div className="col-6 ">
-                    
-                        <div className="leftside" >
-                                        <img src="./images/tl.png" data-aos="fade-right" alt="left uper pic" id="upper-img"></img>
-                                    
-                                        
-                                <form className="form-div" data-aos="fade-right">
-
-                                        <img src="./images/logo-black.png" id="web-logo" alt="logo pic of png"></img>
+                    <Col md={6}>
+                        <Col className="leftside" >
+                                <Image src="./images/tl.png" data-aos="fade-right" alt="left uper pic" id="upper-img" />
+                                     <form className="form-div" data-aos="fade-right">
+                                        <Image src="./images/logo-black.png" id="web-logo" alt="logo pic of png" />
                                         <p id="logo-below-text">Please Enter Your Verification Number</p>
-                                        <div className="verfication-boxes">
+                                        <Col className="verfication-boxes">
                                             <input maxlength="1" ></input>
                                             <input maxlength="1"></input>
                                             <input maxlength="1"></input>
                                             <input maxlength="1"></input>
                                             <input maxlength="1"></input>
                                             <input maxlength="1"></input>
-                                        </div>
-                                        <a href="#">Didn’t receive a verification code?</a>
+                                        </Col>
+                                        <p >Didn’t receive a verification code?</p>
                                         <input type="submit" className="button-procede"  value="Resend Code" ></input>  
                                 </form>
-                            </div>
-                        
-          
-
-
-                    </div>
+                            </Col>
+                    </Col>
                 {/* Div container for right side    */}
-                    
-                    <div className="col-6 " >
-                            
-                            <div className="rightside" >
-                                <img src="./images/plumb.png" id="right-side-img" data-aos="fade-left" height="450px" alt="plumber png pic" />
-                            </div>
-
-                                
-                    </div>
-                </div>
-            </div>
+                    <Col lg={6} >
+                            <Col className="rightside" >
+                                <Image src="./images/plumb.png" id="right-side-img" data-aos="fade-left" height="450px" alt="plumber png pic" />
+                            </Col>
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 }

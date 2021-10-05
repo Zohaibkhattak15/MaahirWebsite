@@ -7,37 +7,36 @@ import ins from '../../assets/social/ins.png';
 import call from '../../assets/social/call.png';
 import loc from '../../assets/social/location.png';
 import mail from '../../assets/social/mail.png';
+import {Container, Row , Image, Col} from 'react-bootstrap'
 
 function Footer() {
     const [active, setactive] = useState('Home');
-
-
     return (
         <>
-            <div className="Conatiner-fluid">
+            <div className="Conatiner-fluid py-5">
                 <div className="container">
-                    <div className="row" >
+                    <Row>
                         <div className="col-sm-3 pt-3 pb-5" id="first-div" data-aos="fade-right">
                             <img src={WebLogo} style={{ cursor: 'pointer' }} className="web-logo-pic" alt="website logo" />
                             <br></br><br></br>
                             <p> <strong>At Maahir,</strong>  we provide you with a variety of services that simplify your everyday living. All you have to do is, Place request, Sit back and relax. It is a  marketplace for home and professional services where you can find and get every type of service right at your doorstep on a single platform. </p>
 
                             <div className="social-links">
-                                <div className="row">
-                                    <div className="col-2" id="fb-logo">
-                                        <a href="https://www.facebook.com/maahirofficial/" target="_blank"> <img src={fb} alt="fb-page-link" ></img></a>
-                                    </div>
+                                <Row>
+                                    <Col lg={2} id="fb-logo">
+                                        <a href="https://www.facebook.com/maahirofficial/" target="blank"> <img src={fb} alt="fb-page-link" ></img></a>
+                                    </Col>
 
-                                    <div className="col-2" id="insta-logo">
-                                        <a href="https://www.instagram.com/maahirproofficial/" target="_blank"> <img src={ins} alt="insta-page-link"></img></a>
-                                    </div>
+                                    <Col lg={2} id="insta-logo">
+                                        <a href="https://www.instagram.com/maahirproofficial/" target="blank"> <img src={ins} alt="insta-page-link"></img></a>
+                                    </Col>
 
-                                </div>
+                                </Row>
 
                             </div>
                         </div>
 
-                        <div className="col-md-3 scnd-div pt-3 pb-5 " data-aos="fade-right">
+                        <Col md={3} className="scnd-div pt-3 pb-5 " data-aos="fade-right">
                             <div><h5>Quick Links</h5></div>
                             <br></br>
                             <ul>
@@ -63,21 +62,21 @@ function Footer() {
                                 </li>
 
                             </ul>
+                        </Col>
 
-
-                        </div>
-                        <div className="col-md-3 pt-3 pb-3" data-aos="fade-right">
-                            <div><h5 className="px-4">Contact Us</h5></div>
+                        <Col md={3} className="pt-3 pb-3" data-aos="fade-right">
+                                <div>
+                                    <h5 className="px-4">Contact Us</h5>
+                                </div>
                             <br></br>
                             <p style={{ cursor: 'pointer' }}>
-                                ‎ <i class="fas fa-phone-volume " ></i>(+92) 51 2305301<br></br><br></br>
+                                ‎<i class="fas fa-phone-volume " ></i>(+92) 51 2305301<br></br><br></br>
                                 <i class="fas fa-envelope-open-text" ></i>info@maahirpro.com<br></br><br></br>
                                 Get Access to Unlimited
                                 Resources. Everywhere,Everytime!<br></br>
-
                             </p>
-                        </div>
-                        <div className="col-sm-3  pb-3" data-aos="fade-right">
+                        </Col>
+                        <Col sm={3} className="pb-3" data-aos="fade-right">
                             <br></br><br></br>
                             <ul className="extra-nav">
                                 <li>
@@ -109,43 +108,37 @@ function Footer() {
                                     </Link>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
 
-                    <div >
-
+                    <div>
                         <hr style={{ color: "white" }}></hr>
-
                     </div>
 
-                    <div className=" container">
-                        <div className="row" id="lower-footer-sec">
-                            <div className=" col-md-4 d-flex text-center  " data-aos="fade-right">
-                                <img src={loc} alt="loctaion logo" id="loct-logo"></img>
+                    <Container>
+                        <Row id="lower-footer-sec">
+                            <Col md={4}  className="d-flex text-center mb-4 " data-aos="fade-right">
+                                <Image src={loc} alt="loctaion logo" id="loct-logo" />
                                 <h2 style={{ color: "white", paddingTop: ".9em", fontFamily: "sanserif", paddingLeft: ".8em" }} id="isl-head">Islamabad</h2>
-                            </div>
+                            </Col>
 
-                            <div className=" col-md-4 d-flex text-center  " data-aos="fade-up">
-                                <img src={call} alt="call logo " id="call-logo" ></img>
-                                <h5 style={{ color: "white", paddingTop: "1.3em", fontFamily: "sanserif" }} id="phone-heading">(+92) 51 2305301</h5>
-                            </div>
+                            <Col md={4} className="d-flex text-center mb-4" data-aos="fade-right">
+                                <Image src={call} alt="call logo " id="call-logo" />
+                                <h5 style={{ color: "white", paddingTop: "2em", fontFamily: "sanserif" }} id="phone-heading">(+92) 51 2305301</h5>
+                            </Col>
 
-                            <div className="col-md-4  d-flex text-center " data-aos="fade-left">
-                                <img src={mail} alt="mail logo" id="mail-logo"></img>
+                            <Col md={4} className="d-flex text-center mt-3" data-aos="fade-right">
+                                <Image src={mail} alt="mail logo" id="mail-logo" />
                                 <h5 style={{ color: "white", paddingTop: "1.3em", fontFamily: "sanserif" }} id="mail-heading">info@maahirpro.com</h5>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
 
-            <div className="col-12" id="reserved-col">
+            <Col lg={12} id="reserved-col">
                 <h6 style={{ paddingTop: ".6em" }}>All Right Reserved | MAAHIR 2021</h6>
-            </div>
+            </Col>
 
 
         </>

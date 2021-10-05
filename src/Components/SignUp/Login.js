@@ -1,5 +1,5 @@
 import React ,{useEffect, useState} from 'react';
-import './SignUp.css';
+// import './SignUp.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
