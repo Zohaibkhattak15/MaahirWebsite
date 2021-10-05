@@ -20,9 +20,10 @@ const SubCat = () => {
 
 
     return (
+        <>
             <Container fluid className="whole-div">
-                <Container >
-                    <Row>
+                 <Container >
+                     <Row>
                 {/* {   
                     services.map(service => 
                     {
@@ -59,23 +60,65 @@ const SubCat = () => {
                         sidesOpacity={.5}
                         sideSize={.1}
                         slidesToScroll={4}
-                        slidesToShow={4}
+                        slidesToShow={6}
                         scrollOnDevice={true}
                     >
-                        {   
-                            services.map(service => 
-                                <Col md={4} sm={6} className="py-5" data-aos="fade-right"> 
-                                    <Image src={cirlpic} alt="Circle pic"/>
-                                    <Image className="circle-div" src={service.img} alt='circle ' />
-                                    <h4>{service.title}</h4>
-                                    <p>{service.description}</p>
+                    
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>  
+                                    <h3>Plumber</h3>
                                 </Col>
-                                )
-                        }       
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>  
+                                    <h3>Plumber</h3>
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/> 
+                                    <h3>Plumber</h3> 
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>
+                                    <h3>Plumber</h3>  
+                                </Col>
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>  
+                                    <h3>Plumber</h3>
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>  
+                                    <h3>Plumber</h3>
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/> 
+                                    <h3>Plumber</h3> 
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/>  
+                                    <h3>Plumber</h3>
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/> 
+                                    <h3>Plumber</h3> 
+                                </Col>
+
+                                <Col className='my-5 mx-5'> 
+                                    <img src={cirlpic} alt="Circle pic"/> 
+                                    <h3>Plumber</h3> 
+                                </Col>
+                        
+                        
                     </InfiniteCarousel>
-                </Row>
+                 </Row>
             </Container>
-        </Container>
+         </Container>
+        </>
     )
 }
 

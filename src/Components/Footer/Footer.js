@@ -16,27 +16,27 @@ function Footer() {
             <div className="Conatiner-fluid py-5">
                 <div className="container">
                     <Row>
-                        <div className="col-sm-3 pt-3 pb-5" id="first-div" data-aos="fade-right">
+                        <Col sm={12} md={3} className="pt-3 pb-5" id="first-div" data-aos="fade-right">
                             <img src={WebLogo} style={{ cursor: 'pointer' }} className="web-logo-pic" alt="website logo" />
                             <br></br><br></br>
                             <p> <strong>At Maahir,</strong>  we provide you with a variety of services that simplify your everyday living. All you have to do is, Place request, Sit back and relax. It is a  marketplace for home and professional services where you can find and get every type of service right at your doorstep on a single platform. </p>
 
-                            <div className="social-links">
+                            <Container className="social-links">
                                 <Row>
-                                    <Col lg={2} id="fb-logo">
+                                    <Col sm={6} lg={2} id="fb-logo">
                                         <a href="https://www.facebook.com/maahirofficial/" target="blank"> <img src={fb} alt="fb-page-link" ></img></a>
                                     </Col>
 
-                                    <Col lg={2} id="insta-logo">
+                                    <Col sm={6} lg={2} id="insta-logo">
                                         <a href="https://www.instagram.com/maahirproofficial/" target="blank"> <img src={ins} alt="insta-page-link"></img></a>
                                     </Col>
 
                                 </Row>
 
-                            </div>
-                        </div>
+                            </Container>
+                        </Col>
 
-                        <Col md={3} className="scnd-div pt-3 pb-5 " data-aos="fade-right">
+                        <Col sm={12} md={3} className="scnd-div pt-3 pb-5 " data-aos="fade-right">
                             <div><h5>Quick Links</h5></div>
                             <br></br>
                             <ul>
@@ -64,7 +64,7 @@ function Footer() {
                             </ul>
                         </Col>
 
-                        <Col md={3} className="pt-3 pb-3" data-aos="fade-right">
+                        <Col sm={12} md={3} className="pt-3 pb-3" data-aos="fade-right">
                                 <div>
                                     <h5 className="px-4">Contact Us</h5>
                                 </div>
@@ -76,7 +76,7 @@ function Footer() {
                                 Resources. Everywhere,Everytime!<br></br>
                             </p>
                         </Col>
-                        <Col sm={3} className="pb-3" data-aos="fade-right">
+                        <Col sm={12} md={3} className="pb-3" data-aos="fade-right">
                             <br></br><br></br>
                             <ul className="extra-nav">
                                 <li>
@@ -115,19 +115,19 @@ function Footer() {
                         <hr style={{ color: "white" }}></hr>
                     </div>
 
-                    <Container>
-                        <Row id="lower-footer-sec">
-                            <Col md={4}  className="d-flex text-center mb-4 " data-aos="fade-right">
+                    <Container >
+                        <Row id="lower-footer-sec" >
+                            <Col sm={12} md={4}  className="d-flex text-center mb-4 " data-aos="fade-right">
                                 <Image src={loc} alt="loctaion logo" id="loct-logo" />
                                 <h2 style={{ color: "white", paddingTop: ".9em", fontFamily: "sanserif", paddingLeft: ".8em" }} id="isl-head">Islamabad</h2>
                             </Col>
 
-                            <Col md={4} className="d-flex text-center mb-4" data-aos="fade-right">
+                            <Col sm={12} md={4} className="d-flex text-center mb-4" data-aos="fade-right">
                                 <Image src={call} alt="call logo " id="call-logo" />
                                 <h5 style={{ color: "white", paddingTop: "2em", fontFamily: "sanserif" }} id="phone-heading">(+92) 51 2305301</h5>
                             </Col>
 
-                            <Col md={4} className="d-flex text-center mt-3" data-aos="fade-right">
+                            <Col sm={12} md={4} className="d-flex text-center mt-3" data-aos="fade-right">
                                 <Image src={mail} alt="mail logo" id="mail-logo" />
                                 <h5 style={{ color: "white", paddingTop: "1.3em", fontFamily: "sanserif" }} id="mail-heading">info@maahirpro.com</h5>
                             </Col>

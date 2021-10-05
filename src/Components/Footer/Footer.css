@@ -138,39 +138,10 @@ h5 {
   }
 }
 
-/* media queries for 576px */
+
+/* media queries for 576px width */
 
 @media all and (max-width: 576px) {
-  .Conatiner-fluid img {
-    height: 20px;
-  }
-
-  #lower-footer-sec #loct-logo {
-    height: 3em;
-    margin-bottom: 2em;
-  }
-
-  #lower-footer-sec #mail-logo {
-    height: 2em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-  }
-
-  #lower-footer-sec #call-logo {
-    height: 2em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-  }
-
-  #lower-footer-sec h2,
-  h4 {
-    font-size: 12px;
-  }
-}
-
-/* media queries for 400px width */
-
-@media all and (max-width: 400px) {
   #lower-footer-sec #mail-logo {
     margin-left: 2em;
     margin-top: 1.3em;
@@ -204,7 +175,7 @@ h5 {
   #lower-footer-sec #call-logo h5 {
     font-size: 2em;
   }
-  #lower-footer-sec #mail-log h5 {
-    font-size: 4em;
+  #lower-footer-sec #mail-heading {
+    font-size: 1em;
   }
 }
