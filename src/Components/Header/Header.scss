@@ -36,16 +36,14 @@
     left: 70px;
   }
 
-  .main-div .row .inner-section #app-store-sec  {
+  .main-div .row .inner-section #app-store-sec {
     left: 70px;
   }
 
   .main-div .row .inner-section #google-store-sec {
     left: 250px;
   }
-
 }
-
 
 @media all and (max-width: 768px) {
   .main-div {
@@ -60,7 +58,6 @@
     left: 65px;
     top: 400px;
   }
-
 }
 
 @media all and (max-width: 576px) {
@@ -78,5 +75,4 @@
   .main-div .row .inner-section #google-store-sec {
     display: none;
   }
-
 }
