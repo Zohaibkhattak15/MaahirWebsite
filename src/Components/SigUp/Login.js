@@ -9,6 +9,7 @@ import logoblack from '../../assets/logo-black.png';
 import graphics9 from '../../assets/graphics9.png'
 import Footer from '../Footer/Footer';
 import { useHistory } from "react-router-dom";
+import axios from 'axios';
 
 
 const Login = () =>{
@@ -22,17 +23,17 @@ const Login = () =>{
     
     const NumInput = () => {
         if(Num === ''){
-            setNum('03')  
+            setNum('92')  
         }
     }
-    const NumOnly = (e) =>{
+    const NumOnly = (e) => {
+        setNum(e.target.value)
         const useval = /^[0-9.\b]+$/ ;
         if (e.target.value ==='' || useval.test(e.target.value)) {
             setNum(e.target.value);
         } 
     } 
     const removevalue = () =>{
-        console.log("function is running so fast")
         if(Num === '03'){
             setNum('');
         }
@@ -49,13 +50,23 @@ const Login = () =>{
             e.preventDefault();
             return
         }
-
-        else if(Num === '03070056578' && Pass === 'admin'){
-            history.push("/");
-        }
-
-
+        
+        else {
+            alert(`The function is call ${Num}  and  ${Pass}` )
+            axios.post('https://maahirpro.com/maahir/index.php/api/signup_customer' ,{
+                mobile  : Num,
+                password : Pass,
+            })
+            .then(res => 
+                {
+                    history.push('/');
+                    console.log(res)
+                }
+                )
+            .catch(err => console.log(err))
+            }
     }
+    
     const toggleeye = () => {
         if(eyeicon) {
             document.getElementById("password").setAttribute("type" , "password");
@@ -70,6 +81,8 @@ const Login = () =>{
     useEffect(() => {
        Aos.init({duration : 2000})
     }, []);
+
+
     return (
         <>
              <Container fluid className=" g-0">
@@ -87,10 +100,25 @@ const Login = () =>{
                                             <h3 style={{color:'#32566c' , fontFamily:'sans-serif'}}>Customer Login</h3>
                                         </Col>
                                         <Col  className='py-2'>
-                                            <input type="text" placeholder="Phone" id="Number" maxLength="11" onBlur={removevalue} value={Num} onChange={NumOnly}  onClick={NumInput}></input>
+                                            <input 
+                                                type="text" 
+                                                placeholder="Phone" 
+                                                id="Number" 
+                                                maxLength="11" 
+                                                value={Num} 
+                                                onBlur={removevalue} 
+                                                onChange={NumOnly}  
+                                                onClick={NumInput}
+                                            />
                                         </Col>
                                         <Col  className=''>
-                                            <input type="password" placeholder="Password" onChange={(e) => setPass(e.target.value)} id="password" />
+                                            <input 
+                                                type="password" 
+                                                placeholder="Password"
+                                                value={Pass} 
+                                                onChange={(e) => setPass(e.target.value)} 
+                                                id="password" 
+                                            />
                                             <Col>
                                                 <FaEye id="eye-icon" onClick={toggleeye} /> 
                                             </Col>

@@ -3,8 +3,16 @@
   position: absolute;
   left: 800px;
   top: 20px;
-  background-color: black;
+  background-color: #32566c;
   padding: 30px 10px;
   border-radius: 0.5em;
   box-shadow: 0px 15px 55px rgba(160, 121, 0, 0.2);
+}
+
+#booknow {
+  width: 380px;
+}
+
+#booknow:hover {
+  background-color: #f76300;
 }

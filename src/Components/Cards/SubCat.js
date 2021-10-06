@@ -32,7 +32,7 @@ const SubCat = () => {
                                     <Image className="circle-div" src={service.img} alt='circle ' />
                                     <h4>{service.title}</h4>
                                     <p>{service.description}</p>
-                                    <Button id='booknow'>Book Now</Button>
+                                    <Button id='booknowservice'>Book Now</Button>
                                 </Col>
                         )
                     })

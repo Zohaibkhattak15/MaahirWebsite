@@ -42,8 +42,8 @@ const LocationSearchInput = () => {
                   : 'suggestion-item';
                 // inline style for demonstration purpose
                 const style = suggestion.active
-                  ? { backgroundColor: '#fafafa', cursor: 'pointer',}
-                  : { backgroundColor: '#ffffff', cursor: 'pointer'};
+                  ? { backgroundColor: '#fafafa', cursor: 'pointer'}
+                  : { backgroundColor: '#ffffff', cursor: 'pointer' ,position:'absolute'};
                 return (
                   <div
                     {...getSuggestionItemProps(suggestion, {
