@@ -2,8 +2,8 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios'
 import './Category.scss';
 import cirlpic from '../../assets/Rect2.png';
-import { Container, Row , Image , Col} from 'react-bootstrap';
-import InfiniteCarousel from 'react-leaf-carousel';
+import { Container, Row , Image , Col , Button} from 'react-bootstrap';
+// import InfiniteCarousel from 'react-leaf-carousel';
 
 
 const SubCat = () => {
@@ -23,7 +23,7 @@ const SubCat = () => {
             <Container fluid className="whole-div">
                 <Container >
                     <Row>
-                {/* {   
+                {   
                     services.map(service => 
                     {
                         return(
@@ -32,12 +32,13 @@ const SubCat = () => {
                                     <Image className="circle-div" src={service.img} alt='circle ' />
                                     <h4>{service.title}</h4>
                                     <p>{service.description}</p>
+                                    <Button id='booknow'>Book Now</Button>
                                 </Col>
                         )
                     })
-                } */}
+                }
 
-                    <InfiniteCarousel
+                    {/* <InfiniteCarousel
                         breakpoints={[
                         {
                             breakpoint: 500,
@@ -72,7 +73,7 @@ const SubCat = () => {
                                 </Col>
                                 )
                         }       
-                    </InfiniteCarousel>
+                    </InfiniteCarousel> */}
                 </Row>
             </Container>
         </Container>

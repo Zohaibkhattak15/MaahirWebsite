@@ -1,8 +1,23 @@
-import React from 'react'
+import React , { useState ,useEffect} from 'react'
+import axios from 'axios';
 import { Container , Row , Col, Form, Button } from 'react-bootstrap';
+import LocationSearchInput from './AutoComplete';
+
 import './form.scss';
 
-const form = () =>  {
+const FormComponent = ({address}) =>  {
+
+    const [services, setServices] = useState([]);
+    
+     useEffect(() => {
+        axios.get('https://maahirpro.com/maahir/index.php/api/get_category_list')
+        .then( res => {
+            setServices(res.data.category)
+        })
+        .catch(err =>  console.log(err)) 
+    }, [])
+
+
     return (
         <>
           <Container>
@@ -15,16 +30,32 @@ const form = () =>  {
                         <Col xs={12} md={12} className="mb-2">
                             <Form.Control placeholder="0307 XXXXXXX" />
                         </Col>
+                            <Col xs={12} md={12} className="mb-2">
+                            <Form.Control as="select">...
+                                <option>Select Service</option>
+                                {   
+                                    services.map(service => 
+                                    {
+                                        return(
+                                            <option value={service.title}>{service.title}</option>
+                                        )
+                                    })
+                                }
+                                </Form.Control>
+                            </Col>
                         <Col xs={12} md={12} className="mb-2">
-                            <Form.Control placeholder="Select Service" />
+                            <Form.Control as="select">...
+                                <option>Select City</option>
+                                <option value='Islamabad'>Islamabad</option>
+                                <option value='Rawalpindi'>Rawalpindi</option>
+                            </Form.Control>
                         </Col>
                         <Col xs={12} md={12} className="mb-2">
-                            <Form.Control placeholder="Select City" />
+                                <LocationSearchInput
+                                    address={address}
+                                />
                         </Col>
-                        <Col xs={12} md={12} className="mb-2">
-                            <Form.Control placeholder="Your Address" />
-                        </Col>
-                        <Col xs={12} md={12} className="mt-3">
+                        <Col xs={12} md={12} className="mt-2">
                             <Button style={{width:'380px'}}>Book Now</Button>
                         </Col>
                     </Row>
@@ -34,4 +65,4 @@ const form = () =>  {
     )
 }
 
-export default form
+export default FormComponent;
