@@ -1,7 +1,6 @@
 #form-styling {
   width: 400px;
   position: absolute;
-  left: 800px;
   top: 20px;
   background-color: #32566c;
   padding: 30px 10px;
@@ -15,4 +14,13 @@
 
 #booknow:hover {
   background-color: #f76300;
+}
+
+@media all and (max-width: 576px) {
+  #form-styling{
+    left: 80px;
+  }
+  #booknow{
+    margin-left: -1px;
+  }
 }

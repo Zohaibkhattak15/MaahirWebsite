@@ -28,7 +28,7 @@ const SubCat = () => {
                     services.map(service => 
                     {
                         return(
-                                <Col md={4} sm={6} className="py-5" data-aos="fade-right"> 
+                                <Col md={4} sm={12} className="py-5 text-center" data-aos="fade-right"> 
                                     <Image src={cirlpic} alt="Circle pic"/>
                                     <Image className="circle-div" src={service.img} alt='circle ' />
                                     <h4>{service.title}</h4>

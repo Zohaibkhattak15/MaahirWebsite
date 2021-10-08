@@ -32,7 +32,6 @@ const Header = () => {
                       </Col>
                     </Col>  
                 </Col>
-                
                 <Col>
                         <Form />
                 </Col>

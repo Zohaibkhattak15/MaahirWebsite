@@ -74,8 +74,9 @@ const Navbar = () => {
                     Contact Us
                     </Link>
                 </li>
-
-                <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('Singin') }>
+                
+                {/* This is section of Buttons */}
+                <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('customer') }>
                   <Link
                   to='/customer'
                   className='nav-links'
@@ -84,7 +85,7 @@ const Navbar = () => {
                     <button id='customer-btn'>Customer</button>
                   </Link>
                 </li>
-                <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('Singin') }>
+                <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('maahir') }>
                   <Link
                   to='/maahir'
                   className='nav-links'

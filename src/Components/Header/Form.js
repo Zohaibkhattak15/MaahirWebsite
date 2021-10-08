@@ -19,8 +19,8 @@ const FormComponent = ({address}) =>  {
 
     return (
         <>
-          <Container>
-            <Form id="form-styling" >
+          <Container >
+            <Form id="form-styling">
                     <Form.Label className='mb-4' style={{color:'white' , fontSize:'1.5em' , display:'flex' , justifyContent:'center'}}>
                         Book Your Service Now
                     </Form.Label>
