@@ -1,5 +1,5 @@
 import React, { useState , useEffect } from 'react';
-import './Navbar.scss';
+import './Navbar.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <button id='customer-btn'>Customer</button>
                   </Link>
                 </li>
-                <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('maahir') }>
+                {/* <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('maahir') }>
                   <Link
                   to='/maahir'
                   className='nav-links'
@@ -93,7 +93,7 @@ const Navbar = () => {
                   >
                     <button id='maahir-btn'>Maahir</button>
                   </Link>
-                </li>   
+                </li>    */}
 
             </ul>
          </nav>

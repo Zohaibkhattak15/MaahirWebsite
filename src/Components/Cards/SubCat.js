@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios'
-import './Category.scss';
+import './Category.css';
 import cirlpic from '../../assets/Rect2.png';
 import { Container, Row , Image , Col , Button} from 'react-bootstrap';
 // import InfiniteCarousel from 'react-leaf-carousel';

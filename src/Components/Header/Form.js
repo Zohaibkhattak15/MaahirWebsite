@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Container , Row , Col, Form, Button } from 'react-bootstrap';
 import AutoComplete from './AutoComplete';
 
-import './form.scss';
+import './form.css';
 
 const FormComponent = ({address}) =>  {
 

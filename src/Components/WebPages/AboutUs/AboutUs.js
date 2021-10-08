@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../Footer/Footer';
-import './AboutUs.scss';
+import './AboutUs.css';
 import HeaderHeading from '../../Header/HeaderHeading';
 import plumb from '../../../assets/plumb.png';
 import graphics from '../../../assets/graphics9.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.scss';
+import './Header.css';
 import APS from '../../assets/social/APS.png';
 import GPS from '../../assets/social/GPS.png' 
 import { Container, Row , Image, Col} from 'react-bootstrap';

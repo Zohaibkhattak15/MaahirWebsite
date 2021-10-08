@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import './HeaderHeading.scss';
+import './HeaderHeading.css';
 
 const HeaderHeading = (props) => {
     return (

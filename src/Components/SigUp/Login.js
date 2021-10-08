@@ -1,5 +1,5 @@
 import React ,{useEffect , useState} from 'react';
-import './Login.scss';
+import './Login.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaEye } from "react-icons/fa";
