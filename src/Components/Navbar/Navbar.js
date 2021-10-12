@@ -78,23 +78,13 @@ const Navbar = () => {
                 {/* This is section of Buttons */}
                 <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('customer') }>
                   <Link
-                  to='/customer'
+                  to='/customerlogin'
                   className='nav-links'
                   onClick={closeMobileMenu}
                   >
                     <button id='customer-btn'>Customer</button>
                   </Link>
                 </li>
-                {/* <li className={active ==='' ? 'nav-active' : null } onClick={ () => setactive('maahir') }>
-                  <Link
-                  to='/maahir'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                  >
-                    <button id='maahir-btn'>Maahir</button>
-                  </Link>
-                </li>    */}
-
             </ul>
          </nav>
       </div>

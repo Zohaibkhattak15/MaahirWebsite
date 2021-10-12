@@ -1,14 +1,14 @@
 import React ,{useEffect , useState} from 'react';
-import './Login.css';
+import './login.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaEye } from "react-icons/fa";
 import { Col, Container, Row ,Image } from 'react-bootstrap';
-import t1image from '../../assets/tl.png'
-import logoblack from '../../assets/logo-black.png';
-import graphics9 from '../../assets/graphics9.png'
-import Footer from '../Footer/Footer';
-import { useHistory } from "react-router-dom";
+import t1image from '../../../assets/tl.png'
+import logoblack from '../../../assets/logo-black.png';
+import graphics9 from '../../../assets/graphics9.png'
+import Footer from '../../Footer/Footer';
+import { useHistory ,Link } from "react-router-dom";
 import axios from 'axios';
 
 
@@ -39,21 +39,19 @@ const Login = () =>{
         }
     }
     const onSubmitform = (e) =>{
-
+        
+        e.preventDefault();
         if(!Num){
             alert('Please Enter your Mobile Number');
-            e.preventDefault();
             return
         }    
         else if(!Pass){
             alert('Kindly fill out the password');
-            e.preventDefault();
             return
         }
         
         else {
-            alert(`The function is call ${Num}  and  ${Pass}` )
-            axios.post('https://maahirpro.com/maahir/index.php/api/signup_customer' ,{
+            axios.post('https://maahirpro.com/maahir/index.php/api/signin' ,{
                 mobile  : Num,
                 password : Pass,
             })
@@ -92,15 +90,16 @@ const Login = () =>{
                         <Col className="leftside" >
                                         <Image src={t1image} data-aos="fade-right" alt="left uper pic" id="upper-img" />
                                                                
-                                <form className="form-div" data-aos="fade-right">
+                                <form id="form-div" data-aos="fade-right">
                                         <Col>
                                             <Image src={logoblack} id="web-logo" alt="logo pic of png" />
                                         </Col>
                                         <Col>
                                             <h3 style={{color:'#32566c' , fontFamily:'sans-serif'}}>Customer Login</h3>
                                         </Col>
-                                        <Col  className='py-2'>
-                                            <input 
+                                        <Col >
+                                            <input
+                                                className='loginInputs' 
                                                 type="text" 
                                                 placeholder="Phone" 
                                                 id="Number" 
@@ -111,8 +110,9 @@ const Login = () =>{
                                                 onClick={NumInput}
                                             />
                                         </Col>
-                                        <Col  className=''>
-                                            <input 
+                                        <Col >
+                                            <input
+                                                className='loginInputs' 
                                                 type="password" 
                                                 placeholder="Password"
                                                 value={Pass} 
@@ -120,14 +120,14 @@ const Login = () =>{
                                                 id="password" 
                                             />
                                             <Col>
-                                                <FaEye id="eye-icon" onClick={toggleeye} /> 
+                                                <FaEye id="eyeicon" onClick={toggleeye} /> 
                                             </Col>
                                         </Col>    
                                         <Col className="inner-link"> 
-                                            Don't have an account? <a href="#Home">Create Account</a>
+                                            Don't have an account? <Link to="/customersignup1">Create Account</Link>
                                         </Col>
                                         <Col className='py-3'>
-                                            <input type="submit" id="button-sigin"  value="Log in" onClick={onSubmitform}></input>  
+                                            <input type="submit" id="buttonsigin"  value="Log in" onClick={onSubmitform}></input>  
                                         </Col>
                                 </form>
                             </Col>

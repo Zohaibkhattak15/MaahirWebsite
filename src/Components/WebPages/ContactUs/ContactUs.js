@@ -1,17 +1,16 @@
 import React,{useState} from 'react';
 import Footer from '../../Footer/Footer';
 import HeaderHeading from '../../Header/HeaderHeading';
+import { Col , Container, Row } from 'react-bootstrap';
 import './ContactUs.css';
-import plumb from '../../../assets/plumb.png';
-import tl from '../../../assets/tl.png';
-// import tld from '../../../assets/tld.png';
-import { Col , Container, Image, Row } from 'react-bootstrap';
+import TextField from '@mui/material/TextField';
+import Maps from './Maps'
+
 
 
 const ContactUs = () => {
 
-   const [alpha, setAlpha] = useState();
-
+    const [alpha, setAlpha] = useState();
 
    const AlphaOnly = (e) =>{
     const useval = /^[a-zA-Z]*$/ ;
@@ -23,55 +22,97 @@ const ContactUs = () => {
   return( 
     <>
               <HeaderHeading heading="Contact US" />
-              <Col lg={12} style={{backgroundColor:"#fff7df"}}>
-                    <Image src={tl} className="img-style img-fluid" data-aos="fade-right" alt="Yellow pic"/>
-              </Col>
                 <section className="get_in_touch">
-                    <Container fluid >
-                      <Row>
+                  <Container fluid>
+                      <Row   data-aos="fade-right">
+                        <Col md={6} sm={12} className='pt-5' style={{cursor :'pointer'}}>
+                            <Row className='pb-4'>
+                              <Col lg={5} className='d-flex justify-content-end'>
+                                <i style={{backgroundColor:'#f76300' , borderRadius :'100px', width :'80px' , display: 'flex' , justifyContent:'center' , alignItems : 'center' }} class="fa fa-2x fa-map-marker" aria-hidden="true"></i>
+                              </Col>
+                              <Col lg={7} className='justify-content-start'>
+                                    <h3  style={{fontSize:'30px' , lineHeight: '39px' , fontWeight:'700' ,}}>Address</h3>
+                                    <p>info@maahirpro.com</p>
+                              </Col>
+                            </Row>
+                            <Row className='pb-4'>
+                              <Col lg={5} className='d-flex justify-content-end'>
+                              <i style={{backgroundColor:'#f76300' , borderRadius :'100px', width :'80px' , display: 'flex' , justifyContent:'center' , alignItems : 'center' }} class="fa fa-2x fa-phone" aria-hidden="true"></i>
 
-                        <Col md={6} className="ms-auto order-2 no-gutters" style={{background:"#F76300"}}>
-                            <Col className=" rightside"> 
-                                <Image src={plumb} data-aos="fade-right" id="plumber"  alt="Pic of worker" />
-                            </Col>
+                              </Col>
+                              <Col lg={7} className='justify-content-start'>
+                                    <h3  style={{fontSize:'30px' , lineHeight: '39px' , fontWeight:'700' ,}}>Contact Number</h3>
+                                    <p>(+92) 51 2305301</p>
+                              </Col>
+                            </Row>
+                            <Row className='pb-4'>
+                              <Col lg={5} className='d-flex justify-content-end'>
+                              <i style={{backgroundColor:'#f76300' , borderRadius :'100px', width :'80px' , display: 'flex' , justifyContent:'center' , alignItems : 'center' }} class="fa fa-2x fa-whatsapp" aria-hidden="true"></i>
+                              </Col>
+                              <Col lg={7} className='justify-content-start'>
+                                    <h3  style={{fontSize:'30px' , lineHeight: '39px' , fontWeight:'700' ,}}>WhatsApp Number</h3>
+                                    <p>info@maahirpro.com</p>
+                              </Col>
+                            </Row>
+                            <Row className='pb-4'>
+                              <Col lg={5} className='d-flex justify-content-end '>
+                                <i style={{backgroundColor:'#f76300' , borderRadius :'100px', width :'80px' , display: 'flex' , justifyContent:'center' , alignItems : 'center' }} class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                              </Col>
+                              <Col lg={7} className='justify-content-start'>
+                                    <h3  style={{fontSize:'30px' , lineHeight: '39px' , fontWeight:'700' ,}}>Email Address</h3>
+                                    <p>info@maahirpro.com</p>
+                              </Col>
+                            </Row>
                         </Col>
 
-                        <Col md={6} className="mb-5 mb-md-0 no-gutters" >
-                              <h1 className="title" data-aos="fade-right" data-aos-delay="">
-                                    Get In Touch
-                              </h1>
-                        <form>
-                          <Row className="contact-form"  >
-                              
-                              <Col md={6} className="form-field">
-                                  <input type="text" name="" id="name" className="input-text" value={alpha} onChange={AlphaOnly}  required />
-                                  <label for="name" className="label">Name</label> 
-                              </Col>
+                        {/* This is the form section */}
+                        <Col md={6} sm={12}>
+                            <Row>
+                              <Col  className='pt-5 d-flex justify-content-center' >
+                                  <TextField  
+                                  label="Enter Your Full Name" 
+                                  variant="filled" 
+                                  style={{width:'500px'}}
+                                  onChange={AlphaOnly} 
+                                  value={alpha}
 
-                              <Col md={6} className="form-field">
-                                  <input type="email" name="" id="email" className="input-text"  required />
-                                  <label for="email" className="label">Email</label> 
+                                  />
                               </Col>
+                            </Row>
+                            <Row>
+                              <Col  className='pt-5 d-flex justify-content-center' >
+                                  <TextField  
+                                  label="0340 1123456" 
+                                  variant="filled" 
+                                  style={{width:'500px'}} 
 
-                              <Col md={6} className="form-field">
-                                  <input type="subject" name="" id="subject" className="input-text"  />
-                                  <label for="subject" className="label">Subject</label> 
+                                  />
                               </Col>
-
-                              <Col md={12}  className="form-field">
-                                  <input type="message" name="" id="message" className="input-text" required />
-                                  <label for="message" className="label">Message</label> 
+                            </Row>
+                            <Row>
+                              <Col  className='pt-5 d-flex justify-content-center' >
+                                <TextField
+                                  variant="filled"
+                                  style={{width:'500px'}}
+                                  multiline
+                                  rows={4}
+                                  label="Your Message"
+                                  />
                               </Col>
-
-                              <Col md className="form-field d-flex justify-content-center"  >
-                                <input type="Submit-btn" className="btn btn-primary d-block "  value="Submit" />
-                              </Col>  
-                        </Row>
-                        
-                      </form>
-                    </Col>
-                  </Row>
-                </Container>
+                            </Row>
+                              <Row>
+                                <Col  className='pt-5 d-flex justify-content-center'>
+                                    <input type="submit" id="sendMessage"  value="Send Message" />
+                                </Col>
+                              </Row>    
+                        </Col>    
+                      </Row>
+                      <Row>
+                          <Col>
+                            <Maps />
+                          </Col>
+                      </Row>
+                  </Container>
               </section>
 
                   

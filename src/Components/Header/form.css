@@ -10,10 +10,21 @@
 
 #booknow {
   width: 380px;
+  height: 50px;
+  background-color: #f76300;
+  border: none;
 }
 
 #booknow:hover {
-  background-color: #f76300;
+  background-color: #df8a51;
+  transition: 0.3s ease;
+
+}
+
+@media all and (max-width: 768px) {
+  #form-styling{
+    left: 350px;
+  }
 }
 
 @media all and (max-width: 576px) {

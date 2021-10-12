@@ -9,8 +9,10 @@ import TermandConds from './Components/WebPages/TermandConds';
 import PricingPolicy from './Components/PricingPolicy/PricingPolicy';
 import RefundPolicy from './Components/RefundPolicy/RefundPolicy';
 import ScrollButton from './Components/ScrollButton.js/ScrollButton';
-import Login from './Components/SigUp/Login'
+import Login from './Components/CustomerRegister/Login/Login'
 import './App.css';
+import SignUp1 from './Components/CustomerRegister/SignUp/SignUp1';
+import SignUp3 from './Components/CustomerRegister/SignUp/SignUp3';
 
 const App = () =>  {
 
@@ -19,7 +21,9 @@ const App = () =>  {
         <Navbar />
           <Switch>
             <Route exact path='/'  component={Home} />
-            <Route path='/customer'  component={Login} />
+            <Route path='/customerlogin'  component={Login} />
+            <Route path='/customersignup1'  component={SignUp1} />
+            <Route path='/customerOTP'  component={SignUp3} />
             <Route path='/services' component={Services} />
             <Route path='/about-us' component={AboutUs} />
             <Route path='/contact-us' component={ContactUs} />

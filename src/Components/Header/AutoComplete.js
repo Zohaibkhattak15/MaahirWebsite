@@ -9,7 +9,6 @@ const LocationSearchInput = () => {
 
     const [address, setaddress] = useState('');
 
-
   const handleChange = addr => {
     setaddress( addr );
   };
@@ -43,7 +42,7 @@ const LocationSearchInput = () => {
                 // inline style for demonstration purpose
                 const style = suggestion.active
                   ? { backgroundColor: '#fafafa', cursor: 'pointer'}
-                  : { backgroundColor: '#ffffff', cursor: 'pointer' ,position:'absolute'};
+                  : { backgroundColor: '#ffffff', cursor: 'pointer'};
                 return (
                   <div
                     {...getSuggestionItemProps(suggestion, {

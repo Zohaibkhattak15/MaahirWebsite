@@ -37,10 +37,12 @@ h5 {
 .scnd-div li .footer-nav {
   text-decoration: none;
   color: white;
-}
+} 
 
 .scnd-div li .footer-nav:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffc000;
+  color: #ffc000 !important;
+  transition: 0.3s ease-in-out;
 }
 
 .extra-nav li {
@@ -55,7 +57,10 @@ h5 {
 }
 
 .extra-nav li #extra-men:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffc000;
+  color: #ffc000 !important;
+  transition: 0.3s ease-in-out;
+
 }
 
 #reserved-col {

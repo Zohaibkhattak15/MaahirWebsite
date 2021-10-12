@@ -3,7 +3,7 @@ import Footer from '../../Footer/Footer';
 import './AboutUs.css';
 import HeaderHeading from '../../Header/HeaderHeading';
 import plumb from '../../../assets/plumb.png';
-import graphics from '../../../assets/graphics9.png';
+// import graphics from '../../../assets/graphics9.png';
 import { Col, Container, Row ,Image } from 'react-bootstrap';
 
 
@@ -15,8 +15,14 @@ const AboutUs = () => {
         <Container fluid className="about-section">
         <Container>
             <Row>
+                    <Col lg={12} className='d-flex justify-content-center '>
+                        <h1 style={{fontSize:'40px' , lineHeight: '39px' , fontWeight:'700' ,}}>Welcome To Maahir</h1>
+                    </Col>
+                     <Col lg={12} className='d-flex justify-content-center'>
+                        <hr style={{width:'100px' , color:'orange' , height:'4px'}}></hr>
+                    </Col>
               <Col md={6} className="ms-auto ">
-                <p className="para"  data-aos="fade-right">We established Cutting Edge Group towards the end of 2009, to fill the gap in the region's communications industry. We have expanded our services so that we are better equipped to reach the consumers, enabling us to offer an array of solutions that will actively connect with them through strategic communication channels. Now we offer specialized services in Interactive Digital Marketing, Branding, Public Relations, Marketing, Events, Business Development and Information Technology.</p>
+                <p id="aboutPara"  data-aos="fade-right">We established Cutting Edge Group towards the end of 2009, to fill the gap in the region's communications industry. We have expanded our services so that we are better equipped to reach the consumers, enabling us to offer an array of solutions that will actively connect with them through strategic communication channels. Now we offer specialized services in Interactive Digital Marketing, Branding, Public Relations, Marketing, Events, Business Development and Information Technology.</p>
               </Col>
               
 
@@ -30,20 +36,13 @@ const AboutUs = () => {
                         <Image src={plumb}  alt="Plumber pic" height="200px" data-aos="fade-up"/>
                       </Col>
 
-                       <Col lg={6} >
-                        <Image src={graphics}  alt="Plumber pic"  height="200px" data-aos="fade-up" />
-                      </Col>
-
-                       <Col lg={6} >
-                        <Image src={graphics}  alt="Plumber pic" height="200px" data-aos="fade-up" />
-                      </Col>
                   </Row>      
               </Col>
 
             <div className="lower-para">
               <div className="row">
                   <div className="col-md-12">
-                      <p  data-aos="fade-right">
+                      <p  data-aos="fade-right" id='aboutPara'>
                         We have developed an integrated marketing communications network to fill in the gap in the communication industry.
 
                         To keep up with the business dynamics of the media industry, Cutting Edge Group offer specialized services in Interactive Digital Marketing, Branding, Public Relations, Marketing, Events, Business Development and Information Technology.

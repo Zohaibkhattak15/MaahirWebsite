@@ -1,0 +1,11 @@
+#customer{
+    width: 380px;
+    height: 50px;
+    background-color: hsl(24, 100%, 48%) ;
+    border: none;
+}
+
+#customer:hover{
+    background-color: #df8a51;
+    transition: 0.3s ease;
+}

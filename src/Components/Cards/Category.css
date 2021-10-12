@@ -28,10 +28,13 @@
 }
 
 #booknowservice {
-  padding: 5px 5px;
-  width: 250px;
+  width: 300px;
+  height: 50px;
+  background-color: #f76300;
+  border: none;
 }
 
 #booknowservice:hover {
-  background-color: #f76300;
+  background-color: #df8a51;
+  transition: 0.3s ease;
 }

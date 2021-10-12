@@ -70,8 +70,8 @@ function Footer() {
                                 </div>
                             <br></br>
                             <p style={{ cursor: 'pointer' }}>
-                                ‎<i class="fas fa-phone-volume " ></i>(+92) 51 2305301<br></br><br></br>
-                                <i class="fas fa-envelope-open-text" ></i>info@maahirpro.com<br></br><br></br>
+                                ‎<i class="fas fa-phone-volume " /> (+92) 51 2305301<br></br><br></br>
+                                <i class="fas fa-envelope-open-text" />info@maahirpro.com<br></br><br></br>
                                 Get Access to Unlimited
                                 Resources. Everywhere,Everytime!<br></br>
                             </p>

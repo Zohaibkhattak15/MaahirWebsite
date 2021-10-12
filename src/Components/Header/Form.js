@@ -10,17 +10,25 @@ const FormComponent = ({address}) =>  {
     const [services, setServices] = useState([]);
     
      useEffect(() => {
+        getServices();
+    }, [])
+
+    const getServices = () => {
         axios.get('https://maahirpro.com/maahir/index.php/api/get_category_list')
         .then( res => {
             setServices(res.data.category)
         })
         .catch(err =>  console.log(err)) 
-    }, [])
+    }
+
+    const sendToAdmin = () => {
+        alert("Your Request Send to Admin");
+    }
 
     return (
         <>
           <Container >
-            <Form id="form-styling">
+            <Form id="form-styling" data-aos="fade-right">
                     <Form.Label className='mb-4' style={{color:'white' , fontSize:'1.5em' , display:'flex' , justifyContent:'center'}}>
                         Book Your Service Now
                     </Form.Label>
@@ -49,7 +57,6 @@ const FormComponent = ({address}) =>  {
                             </Col>
                         <Col xs={12} md={12} className="mb-2">
                             <Form.Control as="select">...
-                                <option>Select City</option>
                                 <option value='Islamabad'>Islamabad</option>
                                 <option value='Rawalpindi'>Rawalpindi</option>
                             </Form.Control>
@@ -60,7 +67,7 @@ const FormComponent = ({address}) =>  {
                                 />
                         </Col>
                         <Col xs={12} md={12} className="mt-2">
-                            <Button id='booknow'>Book Now</Button>
+                            <Button id='booknow' onClick={sendToAdmin}>Book Now</Button>
                         </Col>
                     </Row>
                 </Form>

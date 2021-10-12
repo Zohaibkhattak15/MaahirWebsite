@@ -1,14 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-}
-
 
 /* left side form styling is there */
-.leftside{
+#leftportion{
     background:#fff7df ;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,12 +10,12 @@
     
 }
 
-.leftside .form-div #web-logo{
+#web-logo{
     padding-bottom: 10px;
     height: 70px;
 }
 
-.leftside .form-div #logo-below-text{
+#logo-below-text{
     width: 350px;
     height: 34px;
     font-family: Inter;
@@ -31,18 +25,18 @@
     line-height: 17px;
     text-align: center;
     color: #5C5C5C;
-    padding-bottom: 40px;
+    margin-top: 15px;
 }
 
 
-.leftside #upper-img{
+#leftportion #upper-img{
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     height: 130px;
 }
 
-.leftside .form-div{
+#formdiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,78 +44,86 @@
 
 }
 
-input{
+#verficationboxes{
+    display: flex;
+}
+
+#formdiv #verficationboxes .OTP{
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 20px; 
+    outline: none; 
+    background-color:#fff7df ;
+    text-align: center;  
+}
+
+#buttonprocede {
+    background-color: #32566c;
+    color: ivory;
     padding: 15px 25px;
-    border-radius: 35px;
+    border-radius: 100px;
     width: 370px;
-    margin-bottom: .7rem;
     border: none;
     outline: none;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.2);
+    margin-top: 15px;
 }
 
-input:focus{
-    border: 1px solid #F76300;
+#buttonprocede:hover{
+    background-color: #F76300;
+    transition: 0.2s ease-in-out;
 }
-
 
 /* Rightside container css styling */
 
-.rightside{
-    background: linear-gradient(230.91deg, #FFBE00 0%, #F76300 77.05%);
-    height: 100vh;
+#rightportion{
+    background: #F76300;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rightside img {
-    height: 370px;
+#rightportion img {
+    height: 520px;
 }
-
-
-
-/* Button styling*/
-
-#button-sigin{
-    background-color:  #32566c ;
-    color: white;
-    margin:10px 15px ;
-    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.2);
- }
- 
- #button-sigin:hover{
-     background-color:  #F76300 ;
-     transition: 0.3s ease-in-out;
- }
+#leftportion .circle1{
+    position: absolute;
+    left: -0.86%;
+    right: 97.67%;
+    top: 83%;
+    bottom: 12.22%;
+    border: 2px solid green;
+    background: #E86202;
+    mix-blend-mode: normal;
+    opacity: 0.57;
+    z-index: -1;
+    }
 
 
  /* media queirs for Max-768 width screen */
 
 @media all and (max-width : 768px){
 
-        .rightside{
+        #rightportion{
             width: 100%;
         }
 
-        .leftside{
+        #leftportion{
             width: 100%;
         }
 
-        .rightside img {
-            height: 160px;
+        #rightportion img {
+            height: 360px;
         }
 
-        .leftside .form-div #web-logo{
+        #leftportion .form-div #web-logo{
             height: 55px;
         }
-
-        .leftside .form-div #logo-below-text{
-            font-size: 12px;
-        }
-
                 
-        input{
+        .OTP{
             width: 350px;
           }
 
@@ -133,33 +135,37 @@ input:focus{
 @media all and (max-width : 576px){
     
     
-    .rightside{
+    #rightportion{
         width: 100%;
     }
 
-    .rightside img {
-        height: 140px;
+    #rightportion img {
+        height: 280px;
     }
 
-    .leftside{
+    #leftportion{
         width: 100%;
     }
             
-    .leftside .form-div #web-logo{
-        height: 50px;
+    #leftportion .form-div #web-logo{
+        height: 55px;
     }
 
-    .leftside .form-div #logo-below-text{
-        font-size: 10px;
+    #leftportion .form-div #logo-below-text{
+        font-size: 13px;
     } 
 
-    input{
-        width: 270px;
+    #leftportion .form-div .button-procede{
+        width: 260px;
       }
 
       
-    .leftside #upper-img{
+    #leftportion #upper-img{
         height: 100px;
+    }
+
+    #leftportion .form-div .verfication-boxes{
+        width: 280px;
     }
 }
 
@@ -167,27 +173,28 @@ input:focus{
 /* media queries for max 420px width */
 
 @media all and (max-width : 420px){
-    .rightside{
+    #rightportion{
         display: none;
     }
 
-    .leftside{
+    #leftportion{
         width: 200%;
     }
             
-    .leftside .form-div #web-logo{
+    #leftportion .form-div #web-logo{
         height: 60px;
     }
 
-    .leftside .form-div #logo-below-text{
+    #leftportion .form-div #logo-below-text{
         font-size: 14px;
     } 
 
-    input{
-        width: 370px;
+    .OTP{
+        width: 350px;
       }
     
 }
+
 
 
 /* media queries for max 280px width */
@@ -195,11 +202,13 @@ input:focus{
 @media all and (max-width : 280px){
    
     .leftside{
-        width:200%;
+        width:300%;
+        height: 300%;
+        
     }
 
     input{
-        width: 250px;
+        width: 240px;
     }
 
            

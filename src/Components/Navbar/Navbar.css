@@ -40,7 +40,7 @@
 .nav-item {
   display: flex;
   justify-content: right;
-  align-items: center;
+  align-items: center; 
   font-size: 13px;
 }
 
@@ -80,19 +80,6 @@
   transition: 0.2s ease-in-out;
 }
 
-#maahir-btn {
-  background: #f76300;
-  border-radius: 70px;
-  padding: 10px 25px;
-  color: white;
-  border: none;
-  font-size: 10px;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-}
-
-#maahir-btn:hover {
-  transition: 0.2s ease-in-out;
-}
 /* adding media query for toggle bar menue */
 
 @media screen and (max-width: 850px) {
@@ -163,4 +150,5 @@
     border-bottom: none;
   }
 }
+
 

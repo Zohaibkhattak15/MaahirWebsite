@@ -50,29 +50,34 @@
     width: 100%;
   }
 
+  .main-div .inner-section .div-title {
+    font-size: 20px;
+  }
+
   .main-div .row .inner-section #app-store-sec {
+    top: 200px;
+    left: 65px;
+  }
+
+  .main-div .row .inner-section #google-store-sec {
+    left: 60px;
     top: 300px;
   }
-
-  .main-div .row .inner-section #google-store-sec {
-    left: 65px;
-    top: 400px;
-  }
 }
 
-@media all and (max-width: 576px) {
-  .main-div {
-    width: 100%;
-  }
-  .main-div .row h1 {
-    display: none;
-  }
+
+@media all and (max-width: 576px){
+  .main-div .inner-section .div-title {
+  display: none;  
+}
 
   .main-div .row .inner-section #app-store-sec {
-    display: none;
+    display: none; 
   }
 
   .main-div .row .inner-section #google-store-sec {
-    display: none;
+    display: none; 
   }
 }
+
+
