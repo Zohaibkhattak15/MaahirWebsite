@@ -15,6 +15,8 @@
     "bootstrap": "^5.0.1",
     "google-map-react": "^2.1.10",
     "install": "^0.13.0",
+    "material-ui-search-bar": "^1.0.0-beta.14",
+    "mdb-ui-kit": "^3.9.0",
     "node-sass": "^6.0.1",
     "npm": "^8.0.0",
     "react": "^17.0.2",
@@ -27,6 +29,7 @@
     "react-router": "^5.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-search-field": "^2.0.1",
     "reactstrap": "^8.10.0",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"

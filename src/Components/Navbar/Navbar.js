@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-    <Container fluid>
+    {/* <Container fluid> */}
     <div className="sticky">
       <nav className='navbar'>
         <div className={active ==='Home' ? 'nav-item nav-active' : ' nav-item' }  onClick={ () => setactive('Home') }>
@@ -88,7 +88,7 @@ const Navbar = () => {
             </ul>
          </nav>
       </div>
-    </Container>
+    {/* </Container> */}
   </>
   );
 }
